@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CD26E40C-37C6-4559-A9CB-7B27E168C5B2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PangyaFileCore</RootNamespace>
+    <AssemblyName>PangyaFileCore</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Flags\Enums.cs" />
+    <Compile Include="GameTools\Tools.cs" />
+    <Compile Include="IffManager\IffManager.Achievement.cs" />
+    <Compile Include="IffManager\IFFFile.cs" />
+    <Compile Include="IffManager\IFFFileCollection.cs" />
+    <Compile Include="IffManager\IFFFileManager.cs" />
+    <Compile Include="IffManager\IffMain.cs" />
+    <Compile Include="IffManager\IffManager.AuxPart.cs" />
+    <Compile Include="IffManager\IffManager.Ball.cs" />
+    <Compile Include="IffManager\IffManager.Caddie.cs" />
+    <Compile Include="IffManager\IffManager.CaddieItem.cs" />
+    <Compile Include="IffManager\IffManager.CadieMagicBox.cs" />
+    <Compile Include="IffManager\IffManager.CadieMagicBoxRandom.cs" />
+    <Compile Include="IffManager\IffManager.Card.cs" />
+    <Compile Include="IffManager\IffManager.Character.cs" />
+    <Compile Include="IffManager\IffManager.Club.cs" />
+    <Compile Include="IffManager\IffManager.ClubSet.cs" />
+    <Compile Include="IffManager\IFFManager.CounterItem.cs" />
+    <Compile Include="IffManager\IffManager.Course.cs" />
+    <Compile Include="IffManager\IffManager.CutinInformation.cs" />
+    <Compile Include="IffManager\IffManager.Desc.cs" />
+    <Compile Include="IffManager\IffManager.Enchant.cs" />
+    <Compile Include="IffManager\IffManager.ErrorCodeInfo.cs" />
+    <Compile Include="IffManager\IffManager.Furniture.cs" />
+    <Compile Include="IffManager\IffManager.GrandPrixData.cs" />
+    <Compile Include="IffManager\IffManager.HairStyle.cs" />
+    <Compile Include="IffManager\IffManager.Item.cs" />
+    <Compile Include="IffManager\IffManager.LevelUpPrizeItem.cs" />
+    <Compile Include="IffManager\IffManager.Mascot.cs" />
+    <Compile Include="IffManager\IffManager.Match.cs" />
+    <Compile Include="IffManager\IffManager.MemorialShopCoinItem.cs" />
+    <Compile Include="IffManager\IffManager.MemorialShopRareItem.cs" />
+    <Compile Include="IffManager\IffManager.Part.cs" />
+    <Compile Include="IffManager\IffManager.QuestItem.cs" />
+    <Compile Include="IffManager\IffManager.QuestStuff.cs" />
+    <Compile Include="IffManager\IffManager.SetItem.cs" />
+    <Compile Include="IffManager\IffManager.Skin.cs" />
+    <Compile Include="ItemsList\RandomItem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
