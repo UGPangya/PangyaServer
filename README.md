@@ -11,3 +11,5 @@ Se houver um feedback e coperação da comunidade, em breve liberarei nossas fer
 
 
 Obs.: No Game-Server tem alguns ajustes a fazer relacionado ao código, não tive muito tempo para organizar Sorry.
+
+join us: https://discordapp.com/invite/HwDTssf
